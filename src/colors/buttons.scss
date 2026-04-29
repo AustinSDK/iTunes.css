@@ -1,0 +1,10 @@
+@use "./text.scss";
+
+// Button colors
+$primary: linear-gradient(180deg, #4493E2 0%, #3179CD 28.39%, #185EBE 37.33%, #1545AB 100%);
+$secondary: linear-gradient(180deg, #C5C5C5 0%, #939393 100%);
+    $secondary-light: #858587; // for  secondary "button" ontop of secondary button.
+$tertiary: linear-gradient(180deg, #2A2A2A 0%, #545454 25.49%, #535657 100%);
+
+// Links
+$link: text-link;

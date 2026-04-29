@@ -1,0 +1,8 @@
+@use "./text.scss";
+
+// (Secondary) nav bar colors
+$primaryBackground: linear-gradient(180deg, #767676 0%, #898989 45.2%, #767676 51.45%, #545454 100%);
+$secondaryBackground: linear-gradient(180deg, #010101 0%, #212121 100%);
+$secondaryColor: #FFFFFF;
+$secondaryTextColor: text-secondary-light;
+$primaryTextColor: text-tertiary;

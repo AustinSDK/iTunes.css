@@ -1,0 +1,5 @@
+@use "./colors.scss" as colors; // Colors
+.btn.primary {
+  background: colors.$btn-primary;
+  color: colors.$text-caption;
+}
