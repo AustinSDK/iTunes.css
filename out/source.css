@@ -1,24 +1,52 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 .btn.primary {
   color: #FFFFFF;
   background: linear-gradient(180deg, #4493E2 0%, #3179CD 28.39%, #185EBE 37.33%, #1545AB 100%);
   text-shadow: 0px 0px 1px #072652;
+  border-radius: 0.5rem;
+}
+.btn.primary, .btn.primary > * {
+  color: #FFF;
+  text-shadow: 0 0 1px #072652;
+  font-family: "Sansation Light";
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .btn.secondary {
   color: #FFFFFF;
   background: linear-gradient(180deg, #C5C5C5 0%, #939393 100%);
   text-shadow: 0px 0px 1px #072652;
+  border-radius: 3.125rem;
+}
+.btn.secondary, .btn.secondary > * {
+  color: #FFF;
+  font-family: "Sansation Light";
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
-.btn.primary, .btn.secondary {
+.btn.tertiary {
   border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
   font-size: 1.3rem;
   cursor: pointer;
   text-align: center;
   font-weight: "bolder";
+  border-radius: 3.125rem;
+  background: linear-gradient(180deg, #2A2A2A 0%, #545454 25.49%, #535657 100%);
+}
+.btn.tertiary, .btn.tertiary > * {
+  color: #FFF;
+  font-family: "Sansation Light";
+  font-size: 0.6875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .btn.link {

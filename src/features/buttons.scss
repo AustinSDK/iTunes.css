@@ -1,27 +1,57 @@
 @use "../colors.scss" as colors; // Colors
 
-.btn.primary {
-    color: colors.$text-caption;
-    background: colors.$btn-primary;
-    text-shadow: 0px 0px 1px colors.$btn-textShadow;
-}
-.btn.secondary {
-    color: colors.$text-caption;
-    background: colors.$btn-secondary;
-    text-shadow: 0px 0px 1px colors.$btn-textShadow;
-}
-.btn.primary, .btn.secondary{
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 1.3rem;
-    cursor: pointer;
+.btn.primary, .btn.secondary, .btn.tertiary {
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.25rem;
     text-align: center;
-    font-weight: "bolder";
+    border: none;
+    cursor: pointer;
+    
+    // Common text styles for all button variants
+    &, &>* {
+        color: #FFF;
+        font-family: "Sansation Light";
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
 }
-.btn.link{
+
+.btn.primary {
+    background: colors.$btn-primary;
+    border-radius: 0.5rem;
+    text-shadow: 0px 0px 1px colors.$btn-textShadow;
+
+    &, &>* {
+        font-size: 0.9375rem;
+        text-shadow: 0 0 1px colors.$btn-textShadow;
+    }
+}
+
+.btn.secondary {
+    background: colors.$btn-secondary;
+    border-radius: 3.125rem;
+    text-shadow: 0px 0px 1px colors.$btn-textShadow;
+
+    &, &>* {
+        font-size: 0.8125rem;
+    }
+}
+
+.btn.tertiary {
+    background: colors.$btn-caption;
+    border-radius: 3.125rem;
+
+    &, &>* {
+        font-size: 0.6875rem;
+    }
+}
+
+.btn.link {
     color: colors.$btn-link;
-}
-.btn.link::after{
-    content: "›"
+
+    &::after {
+        content: "›";
+    }
 }
