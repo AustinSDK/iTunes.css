@@ -1,6 +1,32 @@
+@charset "UTF-8";
 .btn.primary {
-  background: linear-gradient(180deg, #4493E2 0%, #3179CD 28.39%, #185EBE 37.33%, #1545AB 100%);
   color: #FFFFFF;
+  background: linear-gradient(180deg, #4493E2 0%, #3179CD 28.39%, #185EBE 37.33%, #1545AB 100%);
+  text-shadow: 0px 0px 1px #072652;
+}
+
+.btn.secondary {
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #C5C5C5 0%, #939393 100%);
+  text-shadow: 0px 0px 1px #072652;
+}
+
+.btn.primary, .btn.secondary {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  text-align: center;
+  font-weight: "bolder";
+}
+
+.btn.link {
+  color: text-link;
+}
+
+.btn.link::after {
+  content: "›";
 }
 
 /*# sourceMappingURL=source.css.map */
