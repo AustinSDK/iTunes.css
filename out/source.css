@@ -109,4 +109,12 @@ div.sc .section span.header, div.sc .section span.text {
   margin-inline: 10px;
 }
 
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+}
+
 /*# sourceMappingURL=source.css.map */
