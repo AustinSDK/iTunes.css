@@ -1,0 +1,57 @@
+.navbar{
+    border-radius: 50px;
+    background: linear-gradient(180deg, #767676 0%, #898989 45.2%, #767676 51.45%, #545454 100%);
+
+    .innerBar{
+        border-radius: 50px;
+        background: linear-gradient(180deg, #010101 0%, #212121 100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .arrow{
+            flex: 1;
+            &::before{
+                content: "➤";
+                color: #fff;
+                text-align: center;
+            }
+            &.left::before{
+                transform: rotate(180deg);
+            }
+            &.disabled::before{
+                color: #555;
+            }
+        }
+
+        .object{
+            flex: 10;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                color: #FFF;
+                font-family: "Sansation Light";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                width: auto;
+                height: auto;
+                padding: 0;
+                margin: 0;
+            }
+
+            &.selected{
+                background: linear-gradient(180deg, #767676 0%, #898989 45.2%, #767676 51.45%, #545454 100%);
+
+                span{
+                    color: #9B8C80;
+                }
+            }
+        }
+    }
+}
