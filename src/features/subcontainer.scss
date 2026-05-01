@@ -1,0 +1,70 @@
+@use "../colors.scss" as colors; // Colors
+
+div.sc {
+    div.header {
+        border-radius: 4px 4px 0 0;
+        background: colors.$sc-header-primary;
+        color: colors.$sc-header-text;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        min-height: 32px; // or whatever height you want
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        span {
+            color: colors.$sc-header-text;
+            text-align: center;
+            font-family: "IBM Plex Mono";
+            font-size: 12px;
+            font-weight: 700;
+            width: auto; // Change from 0 to auto
+        }
+    }
+    
+    .section {
+        background: colors.$sc-section-primary;
+        color: colors.$sc-section-text;
+        border-radius: 0 0 4px 4px;
+        border: 1px solid #D8D9DB;
+        box-shadow: 0 4px 2.5px -2px rgba(0, 0, 0, 0.25);
+        
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; // Ensure border doesn't affect width
+
+        hr{
+            border: 1px solid colors.$sc-section-br;
+            margin: 0 auto;
+            width: 95%; 
+        }
+
+        span.text{
+            color: #000;
+            font-family: "IBM Plex Mono";
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        span.header{
+            color: #33393E;
+            font-family: "IBM Plex Mono";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        span.header, span.text{
+            display: block;
+            // text-align: center;
+            width: 100%;
+
+            margin-inline: 10px;
+        }
+    }
+}
