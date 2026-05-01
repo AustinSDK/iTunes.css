@@ -32,9 +32,9 @@ Copy `out/source.css` (or the minified `out/source.min.css`) into your project a
 <link rel="stylesheet" href="source.css" />
 ```
 
-**Option 2 — Build from source (SCSS)**
+**Option 2 — USe CDN (SCSS)**
 
-See [Building from Source](#building-from-source) below.
+Such as `https://cdn.jsdelivr.net/gh/AustinSDK/iTunes.css/out/source.min.css`
 
 ---
 
